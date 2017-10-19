@@ -1,0 +1,333 @@
+//***************************************
+// FONTS
+
+body
+  font-family: $font1
+//HERO
+
+.hero-slogan
+  color: white 
+  text-align: center
+  font-family: $font1
+  h1
+    background-color: rgba(231, 76, 60,0.7)
+    border-top-left-radius: 10px
+    border-top-right-radius: 10px
+      
+    padding: 40px 80px
+    margin: 0
+    //DOTS BETWEEN WORDS
+    @include bp-xlarge
+      span:before
+        content: " \2022 "
+        padding: 0 5px  
+        color: white
+
+    @include bp-large
+      font-size: 25px
+
+      span:before
+        content: " \2022 "
+        padding: 0 5px  
+        color: white
+
+    @include bp-medium
+      font-size: 20px
+    @include bp-small
+      font-size: 18px
+
+  h2
+    background-color: rgba(44, 62, 80, 0.7)
+    border-bottom-left-radius: 10px
+    border-bottom-right-radius: 10px
+    border-bottom: 1px solid $red
+    padding: 10px 20px 
+    margin: 0
+
+    @include bp-large
+      font-size: 23px
+    @include bp-medium
+      font-size: 18px
+    @include bp-small
+      font-size: 16px
+
+
+//1st BANNER
+
+.banner-slogan
+  padding: 10px
+  p
+    color: white
+    font-size: 28px
+    line-height: 28px
+    letter-spacing: 6px
+    text-align: center
+    @include bp-small
+
+      font-size: 18px
+      line-height: 20px
+      letter-spacing: 2px
+
+
+    @include bp-medium
+      font-size: 20px
+      line-height: 20px
+
+    @include bp-large
+      font-size: 24px
+      line-height: 24px
+
+
+// OFFER 
+
+.offer-container
+
+  h1
+    padding: 30px
+    margin-top: 65px
+    text-align: center
+    width: 100%
+    @include bp-xlarge
+      margin-top: 75px
+      padding: 60px 0 0 0
+    @include bp-large
+      margin-top: 75px
+      padding: 60px 0 0 0
+    
+
+
+.offer-item
+  h3
+    text-align: left
+    font-weight: bold
+    font-size: 24px
+    line-height: 42px
+    @include bp-small
+      font-size: 20px
+      line-height: 18px
+    @include bp-medium
+      font-size: 22px
+      line-height: 28px
+
+.content-box
+  padding: 0 20px
+  p,
+  li
+    font-size: 22px
+    font-weight: normal
+    @include bp-medium
+      font-size: 18px
+      line-height: 22px
+    @include bp-large
+      font-size: 20px
+    @include bp-small
+      font-size: 16px
+      line-height: 20px
+      text-align: left
+.content-title
+  h3
+    margin: 0
+    padding-left: 70px
+
+
+// PORTFOLIO
+
+.portfolio
+  h1
+    text-transform: uppercase
+    padding-top: 20px
+    width: 100%
+    text-align: center
+    font-size: 30px
+    margin: 50px 0
+  
+// JOB OFFER
+
+.job-txt
+  color: white
+  text-align: left
+  h5
+    font-weight: normal
+    margin: 15px 0
+    font-size: 24px
+
+    &:first-child
+      margin-top: 30px
+
+    @include bp-small
+      font-size: 22px
+
+  h4
+    margin: 30px 0
+    font-size: 24px
+    border-radius: 5px
+    text-align: center
+    padding: 10px 
+    text-transform: uppercase
+    background-color: white
+    color: $red
+
+    h2
+      text-align: center
+
+  ul
+    margin: 0
+    padding: 0
+    list-style: square
+
+    @include bp-small
+      border-bottom: 1px solid white
+
+    li
+      margin-left: 10px
+      font-size: 20px
+      letter-spacing: 1px
+      @include bp-small
+        font-size: 18px
+        padding-bottom: 10px
+
+      @include bp-medium
+        font-size: 20px
+        padding-bottom: 14px
+  span
+    display: inline-block
+    font-size: 40px
+    margin: 20px
+    animation: pulse2 900ms infinite ease-in-out both 1s 
+
+
+// TXT 
+
+.txt-revo
+  padding: 20px
+  text-align: center
+  font-weight: bold
+
+  h3
+    font-size: 28px
+    letter-spacing: 2px
+    margin: 30px 0 10px 0
+    @include bp-small
+      font-size: 20px
+    @include bp-medium
+      font-size: 22px
+  p
+    font-size: 22px
+    letter-spacing: 2px
+    color: $pale-black
+    margin: 5px
+    
+    @include bp-small
+      font-size: 18px
+    @include bp-medium
+      font-size: 20px
+
+
+// TXT CONTENT
+
+.txt-coop
+  color: white
+  text-align: left
+  h3
+    margin: 30px 0
+    font-size: 24px
+    border-radius: 5px
+    text-align: center
+    padding: 10px 
+    text-transform: uppercase
+    background-color: white
+    color: $red
+  p
+    letter-spacing: 2px
+    font-size: 22px
+    @include bp-small
+      font-size: 18px
+      padding-bottom: 10px
+    @include bp-medium
+      font-size: 20px
+      padding-bottom: 14px
+
+// LOGO companies
+
+.bg-red
+  p 
+    display: inline-block
+    margin: 0
+    font-size: 30px
+    background-color: white
+    color: $red
+    padding: 0 30px
+
+// FOOTER
+
+footer
+  color: white
+  .foot-txt
+    p
+      font-size: 20px
+      text-align: left
+      line-height: 30px
+      padding: 0 25px
+      margin: 10px
+      .fa
+        font-size: 40px
+        margin: 20px 50px
+
+      &:last-child
+        span:last-child
+          margin-left: 252px
+
+
+
+    @include bp-large
+      p
+        padding: 10px
+
+        .fa
+          font-size: 20px
+          margin: 8px 16px
+        &:last-child
+          span:last-child
+            margin-left: 100px   
+
+    @include bp-medium
+      p
+        text-align: center
+        font-size: 18px
+        line-height: 22px
+        padding: 10px
+        margin: 10px
+        .fa
+          font-size: 20px
+          margin: 8px 16px
+        &:last-child
+          span:last-child
+            margin-left: 0      
+    @include bp-small
+      p
+        text-align: center
+        font-size: 16px
+        line-height: 20px
+        padding: 5px 
+
+        .fa
+          font-size: 18px
+          margin: 5px 10px
+        &:last-child
+          span:last-child
+            margin-left: 0
+
+  h3
+    font-size: 20px
+    font-weight: normal
+    width: 100%
+    margin: 0
+    text-align: center
+    line-height: 20px
+    padding: 20px 0
+
+    // @include bp-medium
+    //   font-size: 20px
+    // @include bp-small
+
+  

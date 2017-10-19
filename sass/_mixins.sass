@@ -1,0 +1,142 @@
+// BREAKPOINTS
+
+// > 1200px
+@mixin bp-xlarge
+  @media only screen and (min-width: ($w-bp-large + 1px))
+    @content
+// 768px to 1199px
+@mixin bp-large 
+  @media only screen and (min-width: ($w-bp-med + 1px)) and (max-width: $w-bp-large)
+    @content    
+// 421px to 767px  
+@mixin bp-medium
+  @media only screen and (min-width: ($w-bp-small + 1px)) and (max-width: $w-bp-med)
+    @content
+// < 420px
+@mixin bp-small 
+  @media only screen and (max-width: $w-bp-small)
+    @content
+
+
+
+
+//NAVIGATION
+
+//** bp x-large // large
+@mixin nav-fixed-desktop
+  display: flex
+  justify-content: center
+  background-color: white
+  max-width: 100%
+  background-color: rgba(255, 255, 255, 0.9)
+
+@mixin nav-fixed-mobile
+  position: fixed
+  top: 80px
+  right: -1000px
+  display: block
+  width: 100%
+  z-index: 1000
+  transition: 700ms ease-in-out
+  li
+    background-color: rgba(44, 62, 80, 0.8)
+    border-bottom: 1px solid rgba(44, 62, 80, 0.8)
+
+@mixin nav-ul-desktop
+  display: flex
+  flex-direction: row
+  margin: 0
+  padding: 0
+  li
+    display: flex
+    border-bottom: 1px solid $red
+    padding: 10px 0
+    transition: 200ms
+    &:hover
+      cursor: pointer
+      background-color: $pale-black
+      border-top: 4px solid $red
+      animation: navigation 300ms 1 forwards
+      a
+        color: white
+        padding: 6px 10px
+    a
+      flex: 1
+      padding: 10px 10px
+      text-decoration: none
+      color: black
+      text-transform: uppercase
+
+// FIXED NAV
+
+@mixin nav-fixed-scroll
+  position: fixed
+  top: 0
+  width: 100%
+
+// LOGO
+
+@mixin logo-md-to-lrg
+  position: fixed
+  top: 20px
+  left: 20px
+  width: 112px
+  min-height: 73px
+
+@mixin logo-xlarge
+  top: 75px
+  left: 100px
+  width: 112px
+  min-height: 73px
+
+//LOGO BACKGROUND
+
+@mixin logo-bg
+  content: ''
+  position: absolute  
+  top: 2px
+  width: 52px
+  height: 52px  
+  transform: rotate(45deg) 
+  border-radius: 15px
+  border: 8px solid rgba(0,0,0,0.1)
+  z-index: 0
+
+
+
+//HAMBURGER
+
+@mixin hamburger-icon
+  position: absolute
+  left: 50%
+  width: 20px
+  margin: auto
+  
+  background-color: white
+  transition: 0.5s
+
+
+//FLEX COLUMN
+@mixin flex-col-betw
+  
+
+// RED BORDER-LINE
+
+@mixin red-line
+  border-top: 1px solid $red-light
+  border-bottom: 1px solid $red-light
+
+// BACKGROUND SIZE AND POSITION
+
+@mixin bg-size-pos
+  background-size: cover
+  background-position: center
+
+// BACKGROUND PHOTO -- OFFER SECTION -- LARGE & XLARGE ONLY
+@mixin offer-bg-photo
+  background-image: url('../../images/background/bg8.png')
+  background-size: contain
+  background-position: right
+  background-repeat: no-repeat
+
+
